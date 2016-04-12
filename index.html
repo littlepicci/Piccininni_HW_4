@@ -77,7 +77,7 @@
 			<p class="copyright">Copyright 2015. Relaxr.</p>
 		</footer>
 	</body>
-
+<!-- It's usually better to put the script in a separate file but if you do put it here, you don't need the document ready function because your page is already loaded -->
 	<script>
 		$("document").ready(function(){
 			$(".readmore").click(function(event){
@@ -94,7 +94,7 @@
 				$(".readmore").show();
 			});	
 		});
-
+ // You only need to use the document ready function once because your page only needs to load one time.
 		$("document").ready(function(){
 			$(".learnmore").click(function(event){
 				event.preventDefault();
